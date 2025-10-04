@@ -1,6 +1,8 @@
 import HeroSection from "@/components/HeroSection";
 import FeaturedCourses from "@/components/FeaturedCourses";
 import { WhyChoose } from "@/components/WhyChoose";
+import { TestimonialsPage } from "@/components/TestimonialsPage";
+import { Webinars } from "@/components/Webinars";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
     <HeroSection/>
     <FeaturedCourses/>
     <WhyChoose/>
+    <TestimonialsPage/>
+    <Webinars/>
     </>
   );
 }

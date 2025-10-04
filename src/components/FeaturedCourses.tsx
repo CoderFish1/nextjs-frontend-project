@@ -24,10 +24,11 @@ const FeaturedCourses = () => {
   );
 
   return (
-    <div className="w-full bg-gray-800 relative h-auto">
+    <div className="w-full bg-gray-950 relative h-auto">
       <div className=" text-2xl md:text-5xl font-bold text-center pt-24 pb-16">
         Learn with the Best
       </div>
+      
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 pb-16">
         {featuredData.map((course: Course) => (
