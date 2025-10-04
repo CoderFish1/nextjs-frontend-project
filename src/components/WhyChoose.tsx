@@ -1,5 +1,5 @@
 "use client";
-import React from 'react'
+import React from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 
 const content = [
@@ -19,7 +19,7 @@ const content = [
       "Learn electronic music production, mixing, and mastering with industry-standard tools like Ableton, FL Studio, and Logic Pro.",
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
-       Music Production
+        Music Production
       </div>
     ),
   },
@@ -45,12 +45,10 @@ const content = [
   },
 ];
 
-
-
 export const WhyChoose = () => {
   return (
-   <div className="w-full">
+    <div className="w-full">
       <StickyScroll content={content} />
     </div>
-  )
-}
+  );
+};

@@ -2,9 +2,6 @@
 import React from "react";
 import { motion, type Transition } from "motion/react";
 
-
-
-
 const transition: Transition = {
   type: "spring",
   mass: 0.5,

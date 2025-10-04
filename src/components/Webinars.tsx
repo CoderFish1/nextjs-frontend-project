@@ -6,10 +6,10 @@ import Link from "next/link";
 export const Webinars = () => {
   return (
     <div className="pt-24 h-auto w-full">
-      <h1 className="text-[1.3vw] font-semibold text-center text-gray-500">
+      <h1 className="md:text-[1.3vw] font-semibold text-center text-gray-500">
         FEATURED WEBINARS
       </h1>
-      <h2 className="text-4xl font-bold text-center">
+      <h2 className="text-3xl md:text-4xl font-bold text-center">
         Enhance your Music Journey
       </h2>
       <HoverEffect
@@ -19,7 +19,7 @@ export const Webinars = () => {
           link: `/webinars/${webinar.slug}`,
         }))}
       />
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-8 mb-4">
         <Link href="/courses">
           <div className="text-center bg-white inline-flex text-black p-2 rounded-2xl font-semibold">
             View all Courses

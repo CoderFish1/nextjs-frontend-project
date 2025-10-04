@@ -62,7 +62,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 w-full overflow-hidden group [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -71,7 +71,7 @@ export const InfiniteMovingCards = ({
         className={cn(
           "flex w-max min-w-full flex-nowrap gap-4 py-4",
           start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          pauseOnHover && "group-hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item) => (
@@ -109,6 +109,13 @@ export const InfiniteMovingCards = ({
           animation: scroll var(--animation-duration) linear infinite;
           animation-direction: var(--animation-direction);
         }
+
+        /* Robust pause-on-hover: pause the scrolling animation when
+           the container (or any child inside it) is hovered.
+           Uses !important to ensure it overrides other rules. */
+        ${pauseOnHover
+          ? `.scroller:hover .animate-scroll { animation-play-state: paused !important; }`
+          : ""}
       `}</style>
     </div>
   );

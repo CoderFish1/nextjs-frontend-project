@@ -56,7 +56,11 @@ export const TestimonialsPage = () => {
         <h1 className="text-center font-bold text-3xl md:text-5xl mb-12 z-10">
           Hear our Harmony: Voice of Success
         </h1>
-        <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
       </div>
     </div>
   );

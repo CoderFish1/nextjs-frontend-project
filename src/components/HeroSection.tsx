@@ -13,9 +13,7 @@ const HeroSection = () => {
       </h1>
 
       <p className="text-center mx-auto w-[70%] mt-5 md:text-xl ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio magni
-        assumenda quo fuga velit odio provident quisquam quia. Exercitationem
-        iure consequatur non placeat.
+        Discover your true musical potential with expert guidance and hands-on learning. Whether you’re a beginner or an advanced performer, our academy helps you master your craft and express your passion through sound.
       </p>
       <div className="mt-6">
         <Link href={"/courses"}>
